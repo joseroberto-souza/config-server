@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.config.server.EnableConfigServer;
 
 @SpringBootApplication
-@EnableConfigServer // 👈 Habilita este serviço como um Config Server
+@EnableConfigServer // Habilita este serviço como um Config Server
 public class ConfigServerApplication {
 
     public static void main(String[] args) {
