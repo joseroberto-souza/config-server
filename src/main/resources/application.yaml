@@ -1,3 +1,21 @@
+server:
+  port: 8888 # Porta padrão do Config Server
+
 spring:
   application:
     name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/joseroberto-souza/config-server.git
+          default-label: main  # Branch padrão (main ou master)
+          clone-on-start: true # Clona o repositório assim que a aplicação inicia
+
+# Registro no Eureka Server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
