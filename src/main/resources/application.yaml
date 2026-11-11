@@ -9,7 +9,7 @@ spring:
       server:
         git:
           uri: https://github.com/joseroberto-souza/config-server.git
-          default-label: main  # Branch padrão (main ou master)
+          default-label: master  # Branch padrão (main ou master)
           clone-on-start: true # Clona o repositório assim que a aplicação inicia
 
 # Registro no Eureka Server
