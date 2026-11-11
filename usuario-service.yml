@@ -1,0 +1,15 @@
+server:
+  port: 8081 🚪
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:usuariodb 💾
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+
+# Propriedade customizada para validarmos o carregamento do Git
+mensagem: "Configuração carregada com sucesso do Config Server no Git!"
