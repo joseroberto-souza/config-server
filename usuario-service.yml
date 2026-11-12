@@ -1,15 +1,20 @@
 server:
-  port: 8081
+  port: 8081 # Define a porta de escuta do microsserviço de usuários.
 
 spring:
   datasource:
+    # Configura o endereço do banco de dados H2 em memória.
     url: jdbc:h2:mem:usuariodb
+    # Define a classe do driver JDBC para conectar ao banco H2.
     driverClassName: org.h2.Driver
+    # Define o nome de usuário padrão do banco de dados.
     username: sa
+    # Mantém a senha vazia para o ambiente de desenvolvimento local.
     password:
   h2:
     console:
+      # Ativa a interface web do H2 para inspecionar as tabelas no navegador.
       enabled: true
 
-# Propriedade customizada para validarmos o carregamento do Git
+# Define uma propriedade customizada para testar a leitura remota do Git.
 mensagem: "Configuração carregada com sucesso do Config Server no Git!"
